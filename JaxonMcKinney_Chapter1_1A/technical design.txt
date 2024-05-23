@@ -1,0 +1,11 @@
+Jaxon McKinney, 8 May 2024
+
+A program for "selling" 20 tickets, with a max of 4 tickets per buyer. It also tracks total number of buyers.
+
+Obviously start with initializing your constants and variables, alongside the main() function cuz why not its what everyone professional does I think. I set up the loop that would go on for as long as there are tickets left to sell and would ask how many tickets the buyer wanted to buy and reduce the tickets remaining by that amount and display number of tickets left. Once the loop ended it would display the total number of buyers.
+
+Variables: How many tickets are left, how many tickets being ordered at one time, how many total seperate buyers bought tickets
+
+Functions: main, one to check invalid ticket orders
+
+https://github.com/jmckin32?tab=repositories

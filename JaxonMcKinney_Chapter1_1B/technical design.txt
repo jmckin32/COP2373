@@ -1,0 +1,11 @@
+Jaxon McKinney, 8 May 2024
+
+A simple 8 ball program that reads responses from a txt file
+
+Made of a small loop that asks a question to the user, and then selects a random line from a txt file to then display to the user. If it detects the user inputs "quit", then it ends the loop.
+
+Variables: the question being asked just to check if the user wants to quit; the list of responses
+
+Functions: just the main
+
+https://github.com/jmckin32?tab=repositories

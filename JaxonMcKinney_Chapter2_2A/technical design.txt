@@ -1,0 +1,16 @@
+Jaxon McKinney, 15 May 2024
+
+A program that checks an email (string) for any suspicious words or phrases that make it seem like a scam
+
+Variables: the email the user inputs, the "scam score", the chances of the email being a scam
+
+Functions: main, an extra one for calculating likelihood of being a scam
+
+1: Initialize variables
+2: Read the text document of sus words/phrases into a list
+3: Ask user to input email
+4: Check, for every word in the list, if it appears in the email, if so, add a point to the scam score and add the word to the "sus words used" list. Repeat until the entire list has been gone through once.
+5: Calculate the likelihood of being a scam based on an arbitrary number I made up (I thought 4 uses of a sus phrase would be enough for 100% but I made it easy to change)
+6: Print the results
+
+https://github.com/jmckin32?tab=repositories
