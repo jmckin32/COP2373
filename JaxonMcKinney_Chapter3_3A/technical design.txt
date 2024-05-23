@@ -1,0 +1,31 @@
+Jaxon McKinney, 23 May 2024
+
+A program that asks the user for a list of expenses and display different values for the sum, max, and min of their expenses
+
+Variables:
+	userInput: tracks if the user wants to continue using the 		program
+	expenses: a dictionary that tracks the user's expenses
+	key: saves the expense the user inputs to later be put into the  		expenses dictionary
+	value: same as key, but for the value
+
+Functions:
+	main: the main part of the program (do I have to mention it 		even?)
+	display_values: does some number cracking to display the values 		(sum, max, min) to the user
+
+Logical Steps:
+1: Import functools for reduce(), initialize variables, most importantly the expenses dictionary, def your main(), the usual
+
+2: Set a while loop using userInput that repeats the code as long as the user does not select "n" (I like my replayability)
+
+3: Take the key and its value from the user by asking for the expense and then its value. Set these to the expense dictionary
+
+4: I have a try-except thing here just in case the user doesn't input a proper number into value
+
+5: Run the expenses dictionary through displayValues() which:
+  5a: Calculates the sum of the expenses and displays it
+  5b: Calculates the highest value expense and displays it
+  5c: Calculates the lowest value expense and displays it
+
+6: This will repeat until user selects "n", where the program will display a goodbye message and quit
+
+https://github.com/jmckin32/COP2373
