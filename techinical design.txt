@@ -1,0 +1,27 @@
+Jaxon McKinney 13 June 2024
+
+User inputs phone number, SSN, zip code, and the program checks for proper formatting of each number
+
+phoneNumberPat: for phone number formatting
+ssnPat: ssn format
+zipPat: zip code format
+phoneNumber: saves phone number
+ssn: saves ssn
+zip: saves zip code
+inp: for user input
+flag: for loops
+
+main(): for main program
+phone_number_search(): for checking phone number formatting
+ssn_search(): for checking ssn formatting
+zip_search(): for checking zip code formatting
+
+1. Initialize all my variables, including compiling the format patterns
+2. Get 3 seperate loops for each number which:
+  2a. Asks user for input
+  2b. Puts the input through the respective format check function to see if it fits
+  2c. If the formatting fits, break the loop and move on; if not, continue the loop
+  2d. After the loop is escaped, flag is reset so the next loop may loop
+3. Display the values received at the end as I think it's good for user clarity
+
+https://github.com/jmckin32/COP2373
