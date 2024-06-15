@@ -1,0 +1,24 @@
+Jaxon McKinney 14 June 2024
+
+A program where a user inputs as many sentences as they want and the program displays the sentences individually as well as how many sentences they inputted.
+
+sentences: stores the string input from the user, used as s in the sentence_find() function
+pat: the formatting for a "full sentence"
+m: stores the individual sentences
+
+main(): mostly just for getting the input from the user, main() was super small in this one (only 2 actual lines)
+sentence_find(): finds the individual sentences in the sentences the user inputted earlier and displays the # of sentences as well as the individual sentences
+
+1. Get the input from the user, which is the only thing main() does in this so the rest is gonna be how sentence_find() runs
+2. Define the pattern for what counts as a sentence, to break it down:
+  2a. "[A-Z0-9]"  Sentence must start with  a capital letter or a number
+  2b. ".*?"  Followed by any amount of other characters
+  2c. "[.!?]"  Must end in a proper punctuation mark (. or ? or !)
+  2d. "(?=...)"  Looking ahead to check if it is followed by:
+   2d1. " [A-Z0-9]"  A space followed by another capital letter or number
+   2d2. "|$"  Or the end of the string
+3. We then find each individual sentence with findall() and store it in m
+4. Display how many sentences was found using len()
+5. And then for each sentence found, display each individual sentence
+
+https://github.com/jmckin32/COP2373
