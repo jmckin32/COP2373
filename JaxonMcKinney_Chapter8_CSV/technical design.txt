@@ -1,0 +1,26 @@
+Jaxon McKinney 20 June 2024
+
+CreateCSV: Creates a CSV file for any amount of students (first and last name) + their scores for 3 exams
+ReadCSV: Reads the CSV file and displays the stats in a table format
+
+numStudents: the number of students
+x (in the "for i in range(numStudents):": input for each row
+
+main(): both programs only use main() as since its being split up in two programs each for only one use there wasnt much use in making extra functions i believed. they work and read well enough on their own anyway.
+
+Create CSV:
+1. Get the number of students from user
+2. Display how the user should input the values and open/create the file
+3. Write the header to the file
+4. For each student:
+  4a. Get the user to input a row of values
+  4b. Split them up
+  4c. Change the exam score values into integers
+  4d. Write the row into the file
+Read CSV:
+1. Open the file
+2. For each row
+  2a. Display each of the values in the file with each value taking up a certain amount of space
+    2aa. First name takes up 15 spaces, last name 20, and exam scores 6
+
+https://github.com/jmckin32/COP2373
