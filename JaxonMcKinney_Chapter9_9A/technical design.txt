@@ -1,0 +1,30 @@
+Jaxon McKinney 24 June 2024
+
+Program for a Bank Account class with values for name, acc #, interest rate, balance; and methods for changing interest rate, changing balance, displaying balance, calculating the interest for a certain amount of days, and returning the values in the object as a string
+
+Variables:
+  BankAcc:
+   name: name
+   accNum: account number
+   balance: balance
+   intRate: interest rate
+  main():
+   inp: for input stuff
+   obj1: creating a test BankAcc object with predetermine values
+
+Functions:
+  main():
+   Just lets the user test the methods of the BankAcc class
+
+1: Defines the BankAcc class
+ 1a: inititalizes the values. including name, acc#, balance, and interest rate
+ 1b: Create the methods
+  1b1: add/subIntRate(), withdraw(), deposit() are just simple value changes
+  1b2: displayBalance just returns the balance
+  1b3: intCalc asks for number of days, and then prints the result of the P*R*T formula, rounded to 2 decimals
+  1b4: __str__() returns each value in string format
+2: (now inside of main()) Creates a test obj1 object using BankAcc with some predetermined values
+3: Creates a loop, listing each method and asking the user which method to perform
+4: Determining which method to perform using a switch, and quitting the loop whenever the user says so (the sleep is so the user can have some time to looks at the results of the method before the loop restarts)
+
+https://github.com/jmckin32/COP2373
