@@ -1,0 +1,41 @@
+Jaxon McKinney, 8 July 2024
+
+A Money class that holds a value, a currency type, and add/sub/mul functions that work with different currency types converting correctly.
+
+Variables:
+num1 and num2 for storing Money class objects, each taking on val1/val2 for their value and uni1/uni2 for their currency type
+op for what operation to do
+loop for looping
+pat for making sure the user inputs a valid currency format #.##
+(in the class) v for the value and units for the unit
+default_curr: for a default currency (currently USD)
+exch_dict: a dictionary for currency exchanging (first three letters for the currency being converted into the right currency, other number for the exchange rate)
+
+Functions:
+main() for testing the class
+(the class):
+   __new__: for the things __new__ does
+   __init__: initialize stuff (plus can check if needs to do default currency or not)
+   __str__: string representation ("Value Unit")
+   __repr__: class representation ("Money(Value, Unit)")
+   __add__: adding (with currency exchange)
+   __sub__: subtracting (with currency exchange)
+   __mul__: multiplying (with currency exchange)
+
+(the class)
+1. Set the exchange rates and the default currency
+2. __new__ and __init__, init having a function where it checks if a unit was given, and if not defaults to the default currency.
+3. __str__ and __repr__, you can check how they're shown in the Functions list
+4. (gonna bunch add sub and mul together) Check if the first number's unit is the same as the second number's unit
+	if not: take the exchange rate, apply it to the second number, then do the operation, rounding it appropriately, and adding the first number's unit at the end
+	if yes: same as above but without the exchange rate
+(main)
+1. set a loop until user selects 'n' on the program
+2. ask for the first unit, checking for valid input
+3. ask for the first value, and save these as an object
+4. same as 2-3 but for second number
+5. get what operation to use
+6. do the appropriate operation and print the results
+7. ask for loop
+
+https://github.com/jmckin32/COP2373
