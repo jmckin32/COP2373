@@ -35,25 +35,25 @@ class Money(Decimal):
     def __add__(self, other):
         if self.units != other.units:
             r = Money.exch_dict[self.units + other.units]
-            m = str(round(self.v + (other.v * r), 2)) + ' ' + self.units
+            m = str(round(self.v + (other.v * r), 2))
         else:
-            m = str(round(self.v + other.v, 2)) + ' ' + self.units
+            m = str(round(self.v + other.v, 2))
         return m
 
     def __sub__(self, other):
         if self.units != other.units:
             r = Money.exch_dict[self.units + other.units]
-            m = str(round(self.v - (other.v * r), 2)) + ' ' + self.units
+            m = str(round(self.v - (other.v * r), 2))
         else:
-            m = str(round(self.v - other.v, 2)) + ' ' + self.units
+            m = str(round(self.v - other.v, 2))
         return m
 
     def __mul__(self, other):
         if self.units != other.units:
             r = Money.exch_dict[self.units + other.units]
-            m = str(round(self.v * (other.v * r), 2)) + ' ' + self.units
+            m = str(round(self.v * (other.v * r), 2))
         else:
-            m = str(round(self.v * other.v, 2)) + ' ' + self.units
+            m = str(round(self.v * other.v, 2))
         return m
 
 
@@ -124,11 +124,11 @@ def main():
 
         ## does the operation chosen
         if op == '+':
-            print(f'The sum of {str(num1)} and {str(num2)} is {num1 + num2}')
+            print(f'The sum of {str(num1)} and {str(num2)} is {num1 + num2} {num1.units}')
         elif op == '-':
-            print(f'The difference of {str(num1)} and {str(num2)} is {num1 - num2}')
+            print(f'The difference of {str(num1)} and {str(num2)} is {num1 - num2} {num1.units}')
         elif op == '*':
-            print(f'The product of {str(num1)} and {str(num2)} is {num1 * num2}')
+            print(f'The product of {str(num1)} and {str(num2)} is {num1 * num2} {num1.units}')
 
         loop = input('Would you like to try again? (y/n): ')
 
