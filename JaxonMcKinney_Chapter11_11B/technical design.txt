@@ -1,0 +1,20 @@
+Jaxon McKinney, 15 July 2024
+
+A program that gets the angle and an adjacent side of a triangle and displays the length of the hypotenuse
+
+Variables:
+angle: the angle
+side: the adjacent side
+result: the resulting hypotenuse
+
+Functions:
+just the main() one
+
+1. Get the angle
+2. Get the adjacent side
+3. Start getting the hypotenuse
+ 3a. divides the adjacent side by the cosine ofthe angle (remember to convert to radians)
+ 3b. round to two digits
+4. Display result
+
+https://github.com/jmckin32/COP2373
