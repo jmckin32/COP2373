@@ -1,0 +1,35 @@
+Jaxon McKinney, 15 July 2024
+
+A program that deals a five card poker hand and asks the user which cards to replace (essentially 5 card draw)
+
+Variables:
+card_list: the cards
+cards_in_play_list: the hand
+discards_list: the cards discarded
+dk: the deck
+discard: which cards to discard
+inp: input for the loop
+
+Functions:
+__init__: creates a deck
+deal: deals out a card
+ex_deal: gets a card from the deck without appending to the hand
+new_hand: clears the hand
+discard_replace: replaces a card in the hand with a new card from the deck
+main: simulates a five card draw game
+
+(the deck class)
+1. sets the cards_list to have every possible card in a stanard playing card deck with both suit and rank
+2. also creates lists for the hand and the discard pile, and shuffles the deck
+3. the deal function checks if theres any cards left in the deck, if not, then it adds the discard pile to the deck and reshuffles, then creates a new card to append to the hand
+4. ex_deal does the same as deal, but without the appending
+5. new_hand function discards the hand
+6. discard_replace adds the specified card to the discard pile, and replaces it with a new card
+(main)
+1. creates the deck
+2. deals 5 cards and prints the hand
+3. asks which cards to discard from the hand
+4. discards the specified cards from the hand using the discard_replace function
+5. asks if the user wants to play again, if not, breaks the loop
+
+https://github.com/jmckin32/COP2373
