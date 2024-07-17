@@ -1,0 +1,21 @@
+Jaxon McKinney, 17 July 2024
+
+A program that takes the grades.csv file, turns it into a numpy array, and displays it, calculates mean median standard deviation max and min, displays which scores got over a 60 (passing), and the percentage of passing
+
+Variables:
+a = saves the array
+
+Functions:
+just main()
+
+1. save the csv file as a numpy array, and chop off the first two columns since they just save the names as nans
+2. Display the calculations of the scores
+ 2a. mean
+ 2b. median
+ 2c. standard deviation
+ 2d. maximum
+ 2e. minimum
+3. Display if each score was passing
+4. Calculate and display the percentage of scores that pass
+
+https://github.com/jmckin32/COP2373
