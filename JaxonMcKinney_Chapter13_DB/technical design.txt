@@ -1,0 +1,41 @@
+Jaxon McKinney, 23 July 2024
+
+A program that creates a database of 10 Florida cities, and has functions to replicate a growth of .02 every 20 years
+
+Variables:
+connection - a connection with the database
+cursor - the sql cursor
+choich - choosing stuff
+
+Functions:
+main() - main
+growthCalc() - calculates the growth over 20 years for all cities, then saves back into the database
+plotGrowth() - takes one city, and plots the growth over a certain amount of years*20
+
+growthCalc()
+1: create the cursor
+2: for every row in the population column
+ 2a: get the population and clean up the extra stuff so its just an int
+ 2b: calculate the growth formula and save it to itself
+3: for every row in the year column
+ 3a: get year and clean up
+ 3b: add 20 to the year
+
+plotGrowth()
+1: create the cursor
+2: display the cities to choose from
+3: get inputs for which city to calc, and how many years to calc
+4: set the x plot points
+5: get the starting y plot point
+6: calculate the growth formula and add to the y plot points
+7: display the plot
+
+main()
+1: create/access the database and the cursor for the database
+2: create the table if not already created
+3: create the values on the table
+4: display initial table values
+5: ask user how many times to perform growthCalc, if not 0:
+ 5a: do the growthCalc that many times
+ 5b: display the new table
+6: do the plotGrowth function
